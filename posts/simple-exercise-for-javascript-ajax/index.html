@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Simple exercise for Javascript Ajax | Hamid Haghdoost</title>
+<meta name="keywords" content="">
+<meta name="description" content="I have about 4 years of experience working as private tutor of programming. About five years ago I published a blog post in my website in Persian language about entitled &ldquo;Private Laravel Tutor&rdquo; and people started to call me. I always love teaching people and it was a good opportunity.
+After a while the number of student raise up and today I have two sessions per day in average and most of my previous students are working around the world.
+Today I had a JS session about Working with AJAX. I post the content of the codes for beginner friends at this community.">
+<meta name="author" content="">
+<link rel="canonical" href="https://hamidhaghdoost.github.io/posts/simple-exercise-for-javascript-ajax/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://hamidhaghdoost.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hamidhaghdoost.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hamidhaghdoost.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hamidhaghdoost.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hamidhaghdoost.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://hamidhaghdoost.github.io/posts/simple-exercise-for-javascript-ajax/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Simple exercise for Javascript Ajax">
+<meta property="og:description" content="I have about 4 years of experience working as private tutor of programming. About five years ago I published a blog post in my website in Persian language about entitled &ldquo;Private Laravel Tutor&rdquo; and people started to call me. I always love teaching people and it was a good opportunity.
+After a while the number of student raise up and today I have two sessions per day in average and most of my previous students are working around the world.
+Today I had a JS session about Working with AJAX. I post the content of the codes for beginner friends at this community.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hamidhaghdoost.github.io/posts/simple-exercise-for-javascript-ajax/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-05-15T21:49:46+01:00">
+<meta property="article:modified_time" content="2022-05-15T21:49:46+01:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Simple exercise for Javascript Ajax">
+<meta name="twitter:description" content="I have about 4 years of experience working as private tutor of programming. About five years ago I published a blog post in my website in Persian language about entitled &ldquo;Private Laravel Tutor&rdquo; and people started to call me. I always love teaching people and it was a good opportunity.
+After a while the number of student raise up and today I have two sessions per day in average and most of my previous students are working around the world.
+Today I had a JS session about Working with AJAX. I post the content of the codes for beginner friends at this community.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://hamidhaghdoost.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Simple exercise for Javascript Ajax",
+      "item": "https://hamidhaghdoost.github.io/posts/simple-exercise-for-javascript-ajax/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Simple exercise for Javascript Ajax",
+  "name": "Simple exercise for Javascript Ajax",
+  "description": "I have about 4 years of experience working as private tutor of programming. About five years ago I published a blog post in my website in Persian language about entitled \u0026ldquo;Private Laravel Tutor\u0026rdquo; and people started to call me. I always love teaching people and it was a good opportunity. After a while the number of student raise up and today I have two sessions per day in average and most of my previous students are working around the world. Today I had a JS session about Working with AJAX. I post the content of the codes for beginner friends at this community.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "I have about 4 years of experience working as private tutor of programming. About five years ago I published a blog post in my website in Persian language about entitled “Private Laravel Tutor” and people started to call me. I always love teaching people and it was a good opportunity. After a while the number of student raise up and today I have two sessions per day in average and most of my previous students are working around the world. Today I had a JS session about Working with AJAX. I post the content of the codes for beginner friends at this community.\nFirst make a index.html file like this:\n\u003c!DOCTYPE html\u003e \u003chtml lang=\"en\"\u003e \u003chead\u003e \u003cmeta charset=\"UTF-8\"\u003e \u003cmeta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"\u003e \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e \u003ctitle\u003eLearning Ajax\u003c/title\u003e \u003clink rel=\"stylesheet\" href=\"css/app.css\"\u003e \u003c/head\u003e \u003cbody\u003e \u003cbutton class=\"btn\" id=\"load\"\u003eLoad Posts\u003c/button\u003e \u003cbutton class=\"btn\" id=\"clear\"\u003eClear Posts\u003c/button\u003e \u003cdiv id=\"posts\"\u003e \u003c/div\u003e \u003cscript src=\"js/app.js\"\u003e\u003c/script\u003e \u003c/body\u003e \u003c/html\u003e Create css/app.css file with this styles:\nbody { margin: 0; } #posts { background-color: #f5f5f5; display: flex; justify-content: center; flex-wrap: wrap; } .post { width: 25%; margin: 20px; border: 3px solid rgb(36, 220, 91); padding: 10px; } .post:hover { border: 3px solid rgb(0, 0, 0); } .post h1 { font-family: cursive; } .btn { padding: 10px; margin: 10px; background-color: rgb(36, 220, 91); color: black; } Copy this code to js/app.js:\ndocument.getElementById(\"load\").addEventListener(\"click\", function () { url = \"https://jsonplaceholder.typicode.com/posts\"; sendAjax(url); }); function sendAjax(url) { let http = new XMLHttpRequest(); http.onload = function () { let posts_element = document.getElementById(\"posts\"); let posts = JSON.parse(this.responseText); posts.forEach(function (post) { let div = document.createElement(\"div\"); div.className = \"post\"; let h3 = document.createElement(\"h3\"); h3.textContent = post.title; div.appendChild(h3); let p = document.createElement(\"p\"); p.textContent = post.body; div.appendChild(p); posts_element.appendChild(div); }); }; http.open(\"GET\", url); http.send(); } document.getElementById(\"clear\").addEventListener(\"click\", function () { let posts_element = document.getElementById(\"posts\"); posts_element.textContent = '' }); If you are looking for a tutor, feel free to contact me :)\n",
+  "wordCount" : "304",
+  "inLanguage": "en",
+  "datePublished": "2022-05-15T21:49:46+01:00",
+  "dateModified": "2022-05-15T21:49:46+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hamidhaghdoost.github.io/posts/simple-exercise-for-javascript-ajax/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hamid Haghdoost",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hamidhaghdoost.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hamidhaghdoost.github.io/" accesskey="h" title="Hamid Haghdoost (Alt + H)">Hamid Haghdoost</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://hamidhaghdoost.github.io/fa/" title="فارسی"
+                            aria-label="فارسی">Fa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Simple exercise for Javascript Ajax
+    </h1>
+    <div class="post-meta"><span title='2022-05-15 21:49:46 +0100 +0100'>May 15, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>I have about 4 years of experience working as private tutor of programming. About five years ago I published a blog post in my website in Persian language about entitled &ldquo;<a href="https://haamid.ir/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AE%D8%B5%D9%88%D8%B5%DB%8C-%D9%84%D8%A7%D8%B1%D8%A7%D9%88%D9%84/">Private Laravel Tutor</a>&rdquo; and people started to call me. I always love teaching people and it was a good opportunity.
+After a while the number of student raise up and today I have two sessions per day in average and most of my previous students are working around the world.
+Today I had a JS session about Working with AJAX. I post the content of the codes for beginner friends at this community.</p>
+<p>First make a <code>index.html</code> file like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;IE=edge&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Learning Ajax&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css/app.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;load&#34;</span>&gt;Load Posts&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;clear&#34;</span>&gt;Clear Posts&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;posts&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js/app.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>Create <code>css/app.css</code> file with this styles:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>#posts {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#f5f5f5</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">flex-wrap</span>: <span style="color:#66d9ef">wrap</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> rgb(<span style="color:#ae81ff">36</span>, <span style="color:#ae81ff">220</span>, <span style="color:#ae81ff">91</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post</span>:<span style="color:#a6e22e">hover</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> rgb(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">post</span> <span style="color:#f92672">h1</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-family</span>: <span style="color:#66d9ef">cursive</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">btn</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-color</span>: rgb(<span style="color:#ae81ff">36</span>, <span style="color:#ae81ff">220</span>, <span style="color:#ae81ff">91</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Copy this code to <code>js/app.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;load&#34;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://jsonplaceholder.typicode.com/posts&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sendAjax</span>(<span style="color:#a6e22e">url</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sendAjax</span>(<span style="color:#a6e22e">url</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">http</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">posts_element</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;posts&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">posts</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">responseText</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">posts</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">post</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">div</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;div&#34;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">div</span>.<span style="color:#a6e22e">className</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;post&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">h3</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;h3&#34;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">h3</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">title</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">div</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">h3</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">body</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">div</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">p</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">posts_element</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">div</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#a6e22e">url</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">send</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;clear&#34;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">posts_element</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;posts&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">posts_element</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>If you are looking for a tutor, feel free to contact me :)</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://hamidhaghdoost.github.io/">Hamid Haghdoost</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

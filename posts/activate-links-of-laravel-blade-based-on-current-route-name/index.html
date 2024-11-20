@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Activate links of Laravel Blade based on current route name | Hamid Haghdoost</title>
+<meta name="keywords" content="">
+<meta name="description" content="Consider a navigation menu with a bunch of links and you are trying to activate them based on the current active route name. In normal case you have to return the currentRouteName() from the controller or maybe in view composer or any other place. I have wrote a simple Laravel composer package that makes it a little bit simpler.
+You can take a look it here: https://github.com/hamidhaghdoost/active.
+For installation use composer require command like this:">
+<meta name="author" content="">
+<link rel="canonical" href="https://hamidhaghdoost.github.io/posts/activate-links-of-laravel-blade-based-on-current-route-name/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://hamidhaghdoost.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hamidhaghdoost.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hamidhaghdoost.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hamidhaghdoost.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hamidhaghdoost.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://hamidhaghdoost.github.io/posts/activate-links-of-laravel-blade-based-on-current-route-name/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Activate links of Laravel Blade based on current route name">
+<meta property="og:description" content="Consider a navigation menu with a bunch of links and you are trying to activate them based on the current active route name. In normal case you have to return the currentRouteName() from the controller or maybe in view composer or any other place. I have wrote a simple Laravel composer package that makes it a little bit simpler.
+You can take a look it here: https://github.com/hamidhaghdoost/active.
+For installation use composer require command like this:">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hamidhaghdoost.github.io/posts/activate-links-of-laravel-blade-based-on-current-route-name/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-05-13T21:49:46+01:00">
+<meta property="article:modified_time" content="2022-05-13T21:49:46+01:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Activate links of Laravel Blade based on current route name">
+<meta name="twitter:description" content="Consider a navigation menu with a bunch of links and you are trying to activate them based on the current active route name. In normal case you have to return the currentRouteName() from the controller or maybe in view composer or any other place. I have wrote a simple Laravel composer package that makes it a little bit simpler.
+You can take a look it here: https://github.com/hamidhaghdoost/active.
+For installation use composer require command like this:">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://hamidhaghdoost.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Activate links of Laravel Blade based on current route name",
+      "item": "https://hamidhaghdoost.github.io/posts/activate-links-of-laravel-blade-based-on-current-route-name/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Activate links of Laravel Blade based on current route name",
+  "name": "Activate links of Laravel Blade based on current route name",
+  "description": "Consider a navigation menu with a bunch of links and you are trying to activate them based on the current active route name. In normal case you have to return the currentRouteName() from the controller or maybe in view composer or any other place. I have wrote a simple Laravel composer package that makes it a little bit simpler. You can take a look it here: https://github.com/hamidhaghdoost/active. For installation use composer require command like this:\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Consider a navigation menu with a bunch of links and you are trying to activate them based on the current active route name. In normal case you have to return the currentRouteName() from the controller or maybe in view composer or any other place. I have wrote a simple Laravel composer package that makes it a little bit simpler. You can take a look it here: https://github.com/hamidhaghdoost/active. For installation use composer require command like this:\ncomposer require tuytoosh/active Then use @active() directive in your blade files.\n\u003ca href=\"#\" class=\"@active('home')\"\u003eHome page\u003c/a\u003e Without this package you have to write sth like this:\n\u003ca href=\"#\" class=\"@if(Route::getCurrentRouteName() == 'home') active @endif\"\u003eHome page\u003c/a\u003e After version 1.7.0 You are able to define an array of route patterns like this:\nclass=\"@active(['admin.dashboard', 'user.dashboard'])\" If you found it useful, please give it a star :) Thank you for reading.\n",
+  "wordCount" : "140",
+  "inLanguage": "en",
+  "datePublished": "2022-05-13T21:49:46+01:00",
+  "dateModified": "2022-05-13T21:49:46+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hamidhaghdoost.github.io/posts/activate-links-of-laravel-blade-based-on-current-route-name/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hamid Haghdoost",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hamidhaghdoost.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hamidhaghdoost.github.io/" accesskey="h" title="Hamid Haghdoost (Alt + H)">Hamid Haghdoost</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://hamidhaghdoost.github.io/fa/" title="فارسی"
+                            aria-label="فارسی">Fa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Activate links of Laravel Blade based on current route name
+    </h1>
+    <div class="post-meta"><span title='2022-05-13 21:49:46 +0100 +0100'>May 13, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Consider a navigation menu with a bunch of links and you are trying to activate them based on the current active route name. In normal case you have to return the <code>currentRouteName()</code> from the controller or maybe in view composer or any other place. I have wrote a simple Laravel composer package that makes it a little bit simpler.
+You can take a look it here: <a href="https://github.com/tuytoosh/active">https://github.com/hamidhaghdoost/active</a>.
+For installation use composer require command like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>composer require tuytoosh/active
+</span></span></code></pre></div><p>Then use <code>@active()</code> directive in your blade files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@active(&#39;home&#39;)&#34;</span>&gt;Home page&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><p>Without this package you have to write sth like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@if(Route::getCurrentRouteName() == &#39;home&#39;) active @endif&#34;</span>&gt;Home page&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><p>After version <code>1.7.0</code> You are able to define an array of route patterns like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>class=&#34;@active([&#39;admin.dashboard&#39;, &#39;user.dashboard&#39;])&#34;
+</span></span></code></pre></div><p>If you found it useful, please give it a star :)
+Thank you for reading.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://hamidhaghdoost.github.io/">Hamid Haghdoost</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

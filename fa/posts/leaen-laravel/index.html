@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>دوره‌ی آموزش سریع لاراول | حمید حق دوست</title>
+<meta name="keywords" content="">
+<meta name="description" content="بعد از حدود ۱۰ سال کار با لاراول، الان حس میکنم زمان خوبیه که یکم در موردش حرف بزنم و اول آموزشش بدم و بعد اگه شد بیشتر در مورد نحوه‌ی استقرار پروژه و کلی چیزای دیگه حرف میزنم. ویدیو ها بصورت رایگان توی این کانال یوتوب منتشر میشه و کد پروژه ای که کار میکنیم هم توی این ریپازیتوری میتونید ببینید. این داکیومنت تا خیلی مدت دیگه بروز میشه و فعلا در حد یه پیش نویس هست که قسمت های مختلف آموزش رو روی این پست آپدیت میکنم. سورس کد قسمت های مختلف این دوره رو میتونید با تگهایی که توی این ریپازیتوری هست ببینید.">
+<meta name="author" content="">
+<link rel="canonical" href="https://hamidhaghdoost.github.io/fa/posts/leaen-laravel/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://hamidhaghdoost.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hamidhaghdoost.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hamidhaghdoost.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hamidhaghdoost.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hamidhaghdoost.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="fa" href="https://hamidhaghdoost.github.io/fa/posts/leaen-laravel/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="دوره‌ی آموزش سریع لاراول">
+<meta property="og:description" content="بعد از حدود ۱۰ سال کار با لاراول، الان حس میکنم زمان خوبیه که یکم در موردش حرف بزنم و اول آموزشش بدم و بعد اگه شد بیشتر در مورد نحوه‌ی استقرار پروژه و کلی چیزای دیگه حرف میزنم. ویدیو ها بصورت رایگان توی این کانال یوتوب منتشر میشه و کد پروژه ای که کار میکنیم هم توی این ریپازیتوری میتونید ببینید. این داکیومنت تا خیلی مدت دیگه بروز میشه و فعلا در حد یه پیش نویس هست که قسمت های مختلف آموزش رو روی این پست آپدیت میکنم. سورس کد قسمت های مختلف این دوره رو میتونید با تگهایی که توی این ریپازیتوری هست ببینید.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hamidhaghdoost.github.io/fa/posts/leaen-laravel/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-05-13T21:49:46+01:00">
+<meta property="article:modified_time" content="2022-05-13T21:49:46+01:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="دوره‌ی آموزش سریع لاراول">
+<meta name="twitter:description" content="بعد از حدود ۱۰ سال کار با لاراول، الان حس میکنم زمان خوبیه که یکم در موردش حرف بزنم و اول آموزشش بدم و بعد اگه شد بیشتر در مورد نحوه‌ی استقرار پروژه و کلی چیزای دیگه حرف میزنم. ویدیو ها بصورت رایگان توی این کانال یوتوب منتشر میشه و کد پروژه ای که کار میکنیم هم توی این ریپازیتوری میتونید ببینید. این داکیومنت تا خیلی مدت دیگه بروز میشه و فعلا در حد یه پیش نویس هست که قسمت های مختلف آموزش رو روی این پست آپدیت میکنم. سورس کد قسمت های مختلف این دوره رو میتونید با تگهایی که توی این ریپازیتوری هست ببینید.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://hamidhaghdoost.github.io/fa/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "دوره‌ی آموزش سریع لاراول",
+      "item": "https://hamidhaghdoost.github.io/fa/posts/leaen-laravel/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "دوره‌ی آموزش سریع لاراول",
+  "name": "دوره‌ی آموزش سریع لاراول",
+  "description": "بعد از حدود ۱۰ سال کار با لاراول، الان حس میکنم زمان خوبیه که یکم در موردش حرف بزنم و اول آموزشش بدم و بعد اگه شد بیشتر در مورد نحوه‌ی استقرار پروژه و کلی چیزای دیگه حرف میزنم. ویدیو ها بصورت رایگان توی این کانال یوتوب منتشر میشه و کد پروژه ای که کار میکنیم هم توی این ریپازیتوری میتونید ببینید. این داکیومنت تا خیلی مدت دیگه بروز میشه و فعلا در حد یه پیش نویس هست که قسمت های مختلف آموزش رو روی این پست آپدیت میکنم. سورس کد قسمت های مختلف این دوره رو میتونید با تگهایی که توی این ریپازیتوری هست ببینید.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "بعد از حدود ۱۰ سال کار با لاراول، الان حس میکنم زمان خوبیه که یکم در موردش حرف بزنم و اول آموزشش بدم و بعد اگه شد بیشتر در مورد نحوه‌ی استقرار پروژه و کلی چیزای دیگه حرف میزنم. ویدیو ها بصورت رایگان توی این کانال یوتوب منتشر میشه و کد پروژه ای که کار میکنیم هم توی این ریپازیتوری میتونید ببینید. این داکیومنت تا خیلی مدت دیگه بروز میشه و فعلا در حد یه پیش نویس هست که قسمت های مختلف آموزش رو روی این پست آپدیت میکنم. سورس کد قسمت های مختلف این دوره رو میتونید با تگهایی که توی این ریپازیتوری هست ببینید.\nنصب لاراول با داکر روی مک\nتوی ویدئوی اول در مورد نصب و شروع کار حرف زدم. تک تک سیستم عامل ها رو نمیتونستم برو و بگم ولی میتونید با داکر پروژه رو خیلی سریع بالا بیارید. هدف از این دوره اینه که خیلی سریع بدون اینکه ویدیو رو بزنید جلو کار رو یاد بگیرید. من برای نصب لاراول روی مک از این کامند استفاده کردم:\ncurl -s “https://laravel.build/laravel-mentor\" | bash\nولی شما میتونید از ابزارهای دیگه ای که موجود هست مثل این ابزارها هم استفاده کنید. ابزارهای موجود روی ویندوز:\nلاراگون (Laragon)\nومپ (wamp)\nلاراول هرد (Laravel Herd)\nبرای مک هم جدا از داکر میتونید از لاراول هرد استفاده کنید که توسط کامینیوتی خود لاراول توسعه داده میشه. کاربرهای لینوکس هم که خودشون بلدن چیکار کنن و معمولا همون داکر بهترین گزینه هست واسشون. اینجا میتونید بصورت ویدیویی توضیحاتم رو ببینید:\nhttps://youtu.be/g9R1hiUcRxA?si=I0NgQHVSoUkvppvq نصب لاراول روی مک و سایر سیستم عامل ها\nتعریف مسیرها در لاراول\nدر بخش دوم در مورد مسیر ها حرف زدم و اینکه چطور میشه مسیرهای به سبک مدرن تعریف کرد. این روزا دیگه خبری از مسیرهای شلوغ و طولانی نیست و توسعه دهنده ها سعی میکنن مسیرها با معنی و تمیز باشن. حتی طراح های محصول روی هم روی این قضیه حساس تر شدن و واسشون مهمه که آدرسی که فردا برای مارکتینگ میخوان بفرستن تمیز و معرف محتوای صفحه باشه. مثلا ما وقتی این آدرس رو میبینیم به راحتی میتونیم حدس بزنیم اون تو چه خبر میتونه باشه.\nhttps://github.com/pricing\nتوی ویدیو میتونید نحوه ی تعریف مسیرهای ساده در لاراول رو ببینید:\nhttps://youtu.be/MWTP8sLT-5I?si=1lqTk2U0Awm7nsTw نحوه ی تعریف مسیر ها در لاراول\nدستوران خط فرمان (CLI tools) در لاراول\nتوی لاراول یه فایل داریم به اسم artisan که باهاش میشه دستورات کامند لاینی اجرا کرد. در واقع یه ابزار خط فرمانی هست که میشه فیچر های مختلف لاراول رو باهاش تولید کرد یا یسری چیزها رو دید. مثلا دستور زیر به ما لیست مسیر های توی پروژمون رو میده:\nsail artisan route:list\nآرتیزان کلی بهتون امکانات میده که باهاشون میتونید کارای مختلف بکنید ولی بازم ممکنه یه کامندی نیاز داشته باشید که توی لاراول وجود نداره. اون موقع خودتون میتونید دست به کار بشید و کامند خودتون رو بسازید. توی این ویدیو این اینترفیس رو معرفی کردم و در موردش بیشتر توضیح دادم.\nhttps://youtu.be/wJuUz1HenUc?si=YoICj63WB9aF-0SY کار با دستور artisan در لاراول\nسورس رو روی گیتهاب ببینید\nداشتم به این فکر میکردم که یه روشی داشته باشیم که من کدهای هر جلسه رو چطوری بهتون بدم؟ گیت و گیتهاب گزینه ی خوبیه ولی مشکل این بود که اگه هر روز کد رو آپدیت میکردم شما دقیقا کد مریوط به جلسه ی خاص رو نداشتید. از طرف دیگه توی این روزا کسی حوصله ی دانلود و اکسترکت کردن فایل zip رو نداره. بخاطر همین شاید بهترین کار اینه که کد مربوط به هر جلسه رو با یه تگ مشخص روی گیت بذاریم. اینجوری میتونید همون بالا کد رو چک کنید با کامندی که میخواید دانلود کنید. توی این جلسه در مورد این حرف زدم.\nhttps://www.youtube.com/watch?v=t9sChVd3X20\nچطور در لاراول ویو تعریف کنیم؟\nسوالی هست که توی ویدیوی بعدی در موردش حرف زدم. ویوها یکی از بخش ها مهم فریمورک لاراول هستن که یه فریمورک MVC هست. یه چیزی مثل وردپرس رو اگه باهاش کار کرده باشید، تمی که روش نصب میکنید یجورایی توی لاراول بهش میگن ویو. در واقع توی ویوها خروجی های html رو رندر میکنیم.\nhttps://www.youtube.com/watch?v=KbX_ip1jnrc تعریف ویو در لاراول\nجلوگیری از تکرار در blade و با لاراول\nفرض کنید که میخواید کلی صفحه ی blade داشته باشید که هر کدوم کلی چیز میز تکراری دارن. توی دنیای پی اچ پی پیور مخصوصا اگه تازه کار هستید خیلی چالش دارید که بخش های تکراری رو حذف کنید و فقط یجا داشته باشید. لاراول با فیچرهایی مثل yield و extends این مدل مشکلات رو خیلی شیک و تر و تمیز حل کرده. توی این ویدیو در مورد این داستانا حرف زدم\nhttps://www.youtube.com/watch?v=Wk5OYlk5wsE\n",
+  "wordCount" : "748",
+  "inLanguage": "fa",
+  "datePublished": "2022-05-13T21:49:46+01:00",
+  "dateModified": "2022-05-13T21:49:46+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hamidhaghdoost.github.io/fa/posts/leaen-laravel/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "حمید حق دوست",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hamidhaghdoost.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hamidhaghdoost.github.io/fa/" accesskey="h" title="حمید حق دوست (Alt + H)">حمید حق دوست</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://hamidhaghdoost.github.io/" title="English"
+                            aria-label="English">En</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      دوره‌ی آموزش سریع لاراول
+    </h1>
+    <div class="post-meta"><span title='2022-05-13 21:49:46 +0100 +0100'>مهٔ 13, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>بعد از حدود ۱۰ سال کار با لاراول، الان حس میکنم زمان خوبیه که یکم در موردش حرف بزنم و اول آموزشش بدم و بعد اگه شد بیشتر در مورد نحوه‌ی استقرار پروژه و کلی چیزای دیگه حرف میزنم. ویدیو ها بصورت رایگان توی این کانال یوتوب منتشر میشه و کد پروژه ای که کار میکنیم هم توی این ریپازیتوری میتونید ببینید. این داکیومنت تا خیلی مدت دیگه بروز میشه و فعلا در حد یه پیش نویس هست که قسمت های مختلف آموزش رو روی این پست آپدیت میکنم. سورس کد قسمت های مختلف این دوره رو میتونید با تگهایی که توی این ریپازیتوری هست ببینید.</p>
+<p>نصب لاراول با داکر روی مک</p>
+<p>توی ویدئوی اول در مورد نصب و شروع کار حرف زدم. تک تک سیستم عامل ها رو نمیتونستم برو و بگم ولی میتونید با داکر پروژه رو خیلی سریع بالا بیارید. هدف از این دوره اینه که خیلی سریع بدون اینکه ویدیو رو بزنید جلو کار رو یاد بگیرید. من برای نصب لاراول روی مک از این کامند استفاده کردم:</p>
+<p>curl -s &ldquo;<a href="https://laravel.build/laravel-mentor%22">https://laravel.build/laravel-mentor"</a> | bash</p>
+<p>ولی شما میتونید از ابزارهای دیگه ای که موجود هست مثل این ابزارها هم استفاده کنید. ابزارهای موجود روی ویندوز:</p>
+<p>لاراگون (Laragon)</p>
+<p>ومپ (wamp)</p>
+<p>لاراول هرد (Laravel Herd)</p>
+<p>برای مک هم جدا از داکر میتونید از لاراول هرد استفاده کنید که توسط کامینیوتی خود لاراول توسعه داده میشه. کاربرهای لینوکس هم که خودشون بلدن چیکار کنن و معمولا همون داکر بهترین گزینه هست واسشون. اینجا میتونید بصورت ویدیویی توضیحاتم رو ببینید:</p>
+<p><a href="https://youtu.be/g9R1hiUcRxA?si=I0NgQHVSoUkvppvq">https://youtu.be/g9R1hiUcRxA?si=I0NgQHVSoUkvppvq</a>
+نصب لاراول روی مک و سایر سیستم عامل ها</p>
+<p>تعریف مسیرها در لاراول</p>
+<p>در بخش دوم در مورد مسیر ها حرف زدم و اینکه چطور میشه مسیرهای به سبک مدرن تعریف کرد. این روزا دیگه خبری از مسیرهای شلوغ و طولانی نیست و توسعه دهنده ها سعی میکنن مسیرها با معنی و تمیز باشن. حتی طراح های محصول روی هم روی این قضیه حساس تر شدن و واسشون مهمه که آدرسی که فردا برای مارکتینگ میخوان بفرستن تمیز و معرف محتوای صفحه باشه. مثلا ما وقتی این آدرس رو میبینیم به راحتی میتونیم حدس بزنیم اون تو چه خبر میتونه باشه.</p>
+<p><a href="https://github.com/pricing">https://github.com/pricing</a></p>
+<p>توی ویدیو میتونید نحوه ی تعریف مسیرهای ساده در لاراول رو ببینید:</p>
+<p><a href="https://youtu.be/MWTP8sLT-5I?si=1lqTk2U0Awm7nsTw">https://youtu.be/MWTP8sLT-5I?si=1lqTk2U0Awm7nsTw</a>
+نحوه ی تعریف مسیر ها در لاراول</p>
+<p>دستوران خط فرمان (CLI tools) در لاراول</p>
+<p>توی لاراول یه فایل داریم به اسم artisan که باهاش میشه دستورات کامند لاینی اجرا کرد. در واقع یه ابزار خط فرمانی هست که میشه فیچر های مختلف لاراول رو باهاش تولید کرد یا یسری چیزها رو دید. مثلا دستور زیر به ما لیست مسیر های توی پروژمون رو میده:</p>
+<p>sail artisan route:list</p>
+<p>آرتیزان کلی بهتون امکانات میده که باهاشون میتونید کارای مختلف بکنید ولی بازم ممکنه یه کامندی نیاز داشته باشید که توی لاراول وجود نداره. اون موقع خودتون میتونید دست به کار بشید و کامند خودتون رو بسازید. توی این ویدیو این اینترفیس رو معرفی کردم و در موردش بیشتر توضیح دادم.</p>
+<p><a href="https://youtu.be/wJuUz1HenUc?si=YoICj63WB9aF-0SY">https://youtu.be/wJuUz1HenUc?si=YoICj63WB9aF-0SY</a>
+کار با دستور artisan در لاراول</p>
+<p>سورس رو روی گیتهاب ببینید</p>
+<p>داشتم به این فکر میکردم که یه روشی داشته باشیم که من کدهای هر جلسه رو چطوری بهتون بدم؟ گیت و گیتهاب گزینه ی خوبیه ولی مشکل این بود که اگه هر روز کد رو آپدیت میکردم شما دقیقا کد مریوط به جلسه ی خاص رو نداشتید. از طرف دیگه توی این روزا کسی حوصله ی دانلود و اکسترکت کردن فایل zip رو نداره. بخاطر همین شاید بهترین کار اینه که کد مربوط به هر جلسه رو با یه تگ مشخص روی گیت بذاریم. اینجوری میتونید همون بالا کد رو چک کنید با کامندی که میخواید دانلود کنید. توی این جلسه در مورد این حرف زدم.</p>
+<p><a href="https://www.youtube.com/watch?v=t9sChVd3X20">https://www.youtube.com/watch?v=t9sChVd3X20</a></p>
+<p>چطور در لاراول ویو تعریف کنیم؟</p>
+<p>سوالی هست که توی ویدیوی بعدی در موردش حرف زدم. ویوها یکی از بخش ها مهم فریمورک لاراول هستن که یه فریمورک MVC هست. یه چیزی مثل وردپرس رو اگه باهاش کار کرده باشید، تمی که روش نصب میکنید یجورایی توی لاراول بهش میگن ویو. در واقع توی ویوها خروجی های html رو رندر میکنیم.</p>
+<p><a href="https://www.youtube.com/watch?v=KbX_ip1jnrc">https://www.youtube.com/watch?v=KbX_ip1jnrc</a>
+تعریف ویو در لاراول</p>
+<p>جلوگیری از تکرار در blade و با لاراول</p>
+<p>فرض کنید که میخواید کلی صفحه ی blade داشته باشید که هر کدوم کلی چیز میز تکراری دارن. توی دنیای پی اچ پی پیور مخصوصا اگه تازه کار هستید خیلی چالش دارید که بخش های تکراری رو حذف کنید و فقط یجا داشته باشید. لاراول با فیچرهایی مثل yield و extends این مدل مشکلات رو خیلی شیک و تر و تمیز حل کرده. توی این ویدیو در مورد این داستانا حرف زدم</p>
+<p><a href="https://www.youtube.com/watch?v=Wk5OYlk5wsE">https://www.youtube.com/watch?v=Wk5OYlk5wsE</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://hamidhaghdoost.github.io/fa/">حمید حق دوست</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
